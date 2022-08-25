@@ -7,7 +7,7 @@ It contains two deployment files, each two deployment objects:
 - One, which consumes zero CPU (`myapp-no-cpu`). The average CPU usage will be 0%.
 - Another, which consumes all available CPU (`myapp-full-cpu`). The average CPU usage will be 100%.
 
-It also contains a HPA object that scales the pods if average CPU usage of the deployment that uses all CPU (`myapp-no-cpu`) reaches 40% (which will never happen).
+It also contains a HPA object that scales the pods if average CPU usage of the deployment that uses no CPU (`myapp-no-cpu`) reaches 40% (which will never happen).
 
 # Setup
 
